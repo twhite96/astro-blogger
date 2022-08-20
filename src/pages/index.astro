@@ -1,0 +1,10 @@
+---
+import config from "config";
+import Base from "../layouts/Base.astro";
+
+let title = config.get("title");
+---
+
+<Base title={title}>
+  <p><a href='/1'>Posts</a> (Pagination Example)</p>
+</Base>

@@ -1,0 +1,42 @@
+---
+import config from "config";
+import Base from "../layouts/Base.astro";
+import Post from "../components/Post.astro";
+import Pager from '../components/Pager.astro';
+
+export async function getStaticPaths({paginate}) {
+  let posts = await Astro.glob("../content/posts/**/*.md");
+
+  posts = posts.reverse(
+    (a, b) =>
+      new Date(b.frontmatter.date).valueOf() -
+      new Date(a.frontmatter.date).valueOf()
+  );
+
+  // posts.paginationSize comes from /config/default.json
+  // replacing this variable with a hardcoded number 2 results in no bug (page sizes are correct)
+  return paginate(posts, {pageSize: `${config.get('posts.paginationSize')}`});
+}
+const {page} = Astro.props;
+
+const posts = page.data.map((post) => {
+  return {
+    frontmatter: post.frontmatter,
+    content: post.compiledContent()
+  }
+});
+---
+
+<Base title='test'>
+  <section aria-label='Post list'>
+    {posts && posts.map((post) => {
+      return (
+        <Post content={post}>
+          <Fragment set:html={post.content}/>
+        </Post>
+        <hr class="post-hr" />
+      );
+    })}
+    <Pager page={page} />
+  </section>
+</Base>

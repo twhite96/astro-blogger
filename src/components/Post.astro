@@ -1,0 +1,28 @@
+---
+import {Icon} from "astro-icon";
+import config from "config";
+import path from "path";
+import {postdate} from "./utilities/DateFormat";
+
+const {content} = Astro.props;
+---
+
+<article>
+  <p class='post-date'>
+    <Icon pack='bi' name='calendar2-week-fill' />
+    <time datetime={content.frontmatter.pubDate}>
+      {postdate(content.frontmatter.pubDate)}
+    </time>
+  </p>
+  <h2 class='post'>
+    <a
+      href={new URL(
+        path.join(config.get("posts.path"), content.frontmatter.slug),
+        config.get("url")
+      )}
+      >{content.frontmatter.title}
+    </a>
+  </h2>
+  <p class='post-description'>{content.frontmatter.description}</p>
+  <slot />
+</article>

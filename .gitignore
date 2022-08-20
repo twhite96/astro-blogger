@@ -1,0 +1,26 @@
+# editor files
+.nova/
+.vscode/
+.eslint*
+.prettier*
+
+# build output
+dist
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# environment variables
+.env
+.env.production
+config
+
+# macOS-specific files
+.DS_Store
+node_modules

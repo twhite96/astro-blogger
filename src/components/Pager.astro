@@ -1,0 +1,12 @@
+---
+import config from "config";
+
+const {page} = Astro.props;
+const pageCount = page.total;
+const currentPage = page.currentPage;
+
+const pageSize = config.get("posts.paginationSize");
+---
+
+{page.url.prev ? <a href={page.url.prev}>Previous</a> : null}
+{page.url.next ? <a href={page.url.next}>Next</a> : null}

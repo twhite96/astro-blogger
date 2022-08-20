@@ -1,0 +1,31 @@
+---
+import {Icon} from "astro-icon";
+import Header from "../components/Header.astro";
+import Menu from "../components/Menu.astro";
+import "../styles/styles.css";
+
+export interface Props {
+  title: string;
+  description: string;
+  url: string;
+}
+
+const {title, description} = Astro.props;
+---
+
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>{title}</title>
+    <meta name='title' content={title} />
+    <meta name='description' content={description} />
+  </head>
+  <body>
+    <main>
+      <Header title={title} />
+      <Menu />
+      <slot />
+    </main>
+  </body>
+</html>
