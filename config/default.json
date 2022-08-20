@@ -1,0 +1,10 @@
+{
+  "title": "Astro Index Pager Demo",
+  "description": "A repo to demonstrate paginating the index page",
+  "url": "http://localhost:3000/",
+  "rssUrl": "rss.xml",
+  "posts": {
+    "path": "posts",
+    "paginationSize": 2
+  }
+}

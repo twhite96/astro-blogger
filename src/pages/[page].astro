@@ -1,5 +1,4 @@
 ---
-import config from "config";
 import Base from "../layouts/Base.astro";
 import Post from "../components/Post.astro";
 import Pager from "../components/Pager.astro";
@@ -23,8 +22,6 @@ const posts = page.data.map((post) => {
     content: post.compiledContent(),
   };
 });
-
-const pageSize = config.get("posts.paginationSize");
 ---
 
 <Base title='test'>
@@ -39,6 +36,6 @@ const pageSize = config.get("posts.paginationSize");
         );
       })
     }
-    <Pager page={page} , pageSize={pageSize} />
+    <Pager page={page} , 2 />
   </section>
 </Base>

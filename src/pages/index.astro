@@ -12,8 +12,8 @@ allPosts = allPosts.reverse(
     new Date(a.frontmatter.date).valueOf()
 );
 
-const pageSize = config.get("posts.paginationSize");
-const indexPosts = allPosts.slice(0, Number(pageSize));
+const pageSize = 2;
+const indexPosts = allPosts.slice(0, pageSize);
 ---
 
 <Base title={title.toUpperCase()}>
