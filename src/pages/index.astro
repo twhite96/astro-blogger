@@ -1,10 +1,32 @@
 ---
 import config from "config";
 import Base from "../layouts/Base.astro";
+import Post from "../components/Post.astro";
 
 let title = config.get("title");
+
+let allPosts = await Astro.glob("../content/posts/**/*.md");
+allPosts = allPosts.reverse(
+  (a, b) =>
+    new Date(b.frontmatter.date).valueOf() -
+    new Date(a.frontmatter.date).valueOf()
+);
+
+const pageSize = config.get("posts.paginationSize");
+const indexPosts = allPosts.slice(0, Number(pageSize));
 ---
 
-<Base title={title}>
-  <p><a href='/1'>Posts</a> (Pagination Example)</p>
+<Base title={title.toUpperCase()}>
+  <section aria-label='Post list'>
+    {
+      indexPosts.map((post) => {
+        return (
+          <Post content={post}>
+            <post.Content />
+          </Post>
+        );
+      })
+    }
+    {allPosts.length > pageSize ? <a href='/2'>Next</a> : null}
+  </section>
 </Base>
