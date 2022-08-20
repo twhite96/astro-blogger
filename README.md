@@ -1,7 +1,5 @@
-# Repo to demo Astro pagination bug.
+# Astro index page pagination demo.
 
-Pagination size is set to 2. There are 5 posts. 3 pages will be built. Page 1 has posts 5 and 4. Page 2 has posts 3, 2, and 1. Page 3 hast post 1.
+Pagination size is set to 2. There are 5 posts. 3 pages will be built.
 
-This can be fixed in pages/[page].astro by changing the pageSize parameter value from a variable to a hardcoded number.
-
-The bug appears to be related to using a variable for the pageSize parameter.
+This works by only showing the pageSize number of posts on the index page, which then links to /2 (page 2 of the pagination results). Page 2's previous link links back to index.

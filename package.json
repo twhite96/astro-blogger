@@ -1,6 +1,6 @@
 {
-  "name": "Astro Pagination Bug",
-  "description": "A pagination bug repo",
+  "name": "Astro Index Page Pagination Demo",
+  "description": "A repo to demonstrate paginating the index page",
   "version": "0.0.1",
   "scripts": {
     "dev": "export NODE_ENV=development && astro dev",
