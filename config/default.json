@@ -4,7 +4,13 @@
   "url": "http://localhost:3000/",
   "rssUrl": "rss.xml",
   "posts": {
-    "path": "posts",
-    "paginationSize": 2
+    "path": "/",
+    "paginationSize": 7,
+    "heroWidths": [200, 400, 700, 1000],
+    "heroSizes": "(max-width: 600px) 50vw, 75vw"
+  },
+  "rss": {
+    "path": "/",
+    "fileName": "rss.xml"
   }
 }

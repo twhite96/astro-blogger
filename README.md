@@ -1,5 +1,3 @@
-# Astro index page pagination demo.
+# Astro Blogger
 
-Pagination size is set to 2. There are 5 posts. 3 pages will be built.
-
-This works by only showing the pageSize number of posts on the index page, which then links to /2 (page 2 of the pagination results). Page 2's previous link links back to index.
+**Astro Blogger** is an Astro theme for blogging that demonstrates multiple concepts that are currently not directly supported in Astro such as index page pagination and an RSS feed with full post content in each item.
