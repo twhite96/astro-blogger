@@ -1,7 +1,7 @@
 {
-  "name": "Astro Index Page Pagination Demo",
-  "description": "A repo to demonstrate paginating the index page",
-  "version": "0.0.1",
+  "name": "Astro Blogger",
+  "description": "An Astro theme for blogging that demonstrates concepts such as index page pagination and RSS feed with full post content.",
+  "version": "0.0.3",
   "scripts": {
     "dev": "export NODE_ENV=development && astro dev",
     "dev:h": "export NODE_ENV=development && astro dev --host",

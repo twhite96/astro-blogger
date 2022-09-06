@@ -1,8 +1,8 @@
 ---
-import Base from "../../layouts/Base.astro";
-import Post from "../../components/Post.astro";
+import Base from "../layouts/Base.astro";
+import Post from "../components/Post.astro";
 export async function getStaticPaths() {
-  const posts = await Astro.glob("../../content/posts/**/*.md");
+  const posts = await Astro.glob("../content/posts/**/*.md");
 
   return posts.map((post) => ({
     params: {

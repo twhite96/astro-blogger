@@ -1,6 +1,6 @@
 {
-  "title": "Astro Index Pager Demo",
-  "description": "A repo to demonstrate paginating the index page",
+  "title": "Astro Blogger",
+  "description": "An Astro theme for blogging with index page pagination and full RSS.",
   "url": "http://localhost:3000/",
   "rssUrl": "rss.xml",
   "posts": {

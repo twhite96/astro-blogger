@@ -10,4 +10,4 @@ There is one main layout, Base.astro, located in src/layouts. It makes use of ad
 
 Utilities such as date/time functions are kep in src/components/utilities.
 
-Initially Astro Blogger used a global css file in src/styles/styles.css for all styling, but I am moving styles to individual Astro components with locally scoped <style></style> tags were it makes sense and doesn't break styling.
+Initially Astro Blogger used a global css file in src/styles/styles.css for all styling, but I am moving styles to individual Astro components with locally scoped <style></style> tags where it makes sense and doesn't break styling.
