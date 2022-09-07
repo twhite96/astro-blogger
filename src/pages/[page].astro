@@ -4,7 +4,7 @@ import Post from "../components/Post.astro";
 import Pager from "../components/Pager.astro";
 
 export async function getStaticPaths({paginate}) {
-  let posts = await Astro.glob("../content/posts/**/*.md");
+  let posts = await Astro.glob("../content/posts/*.mdx");
 
   posts = posts.reverse(
     (a, b) =>
@@ -28,13 +28,13 @@ const posts = page.data.map((post) => {
   <section aria-label='Post list'>
     {
       posts &&
-      posts.map((post) => {
-        return (
-          <Post content={post}>
-            <Fragment set:html={post.content} />
-          </Post>
-        );
-      })
+        posts.map((post) => {
+          return (
+            <Post content={post}>
+              <Fragment set:html={post.content} />
+            </Post>
+          );
+        })
     }
     <Pager page={page} , 2 />
   </section>
