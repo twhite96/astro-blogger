@@ -1,3 +1,4 @@
+import { format } from "date-fns";
 import enUS from "date-fns/locale/en-US/index.js";
 import pkg from "date-fns-tz";
 const { formatInTimeZone } = pkg;
@@ -17,4 +18,8 @@ export function postdate(date) {
 
 export function utcdate(date) {
   return formatInTimeZone(date, "UTC", postPattern, { locale: enUS });
+}
+
+export function year() {
+  return format(new Date(), "yyyy");
 }

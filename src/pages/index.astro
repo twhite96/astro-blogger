@@ -2,6 +2,8 @@
 import config from "config";
 import Base from "../layouts/Base.astro";
 import Post from "../components/Post.astro";
+import RssXml from "../components/RssXml.astro";
+import WriteFile from "../components/WriteFile.astro";
 
 let title = config.get("title");
 
@@ -14,10 +16,13 @@ allPosts = allPosts.reverse(
 
 const pageSize = 2;
 const indexPosts = allPosts.slice(0, pageSize);
+
+const publicDirUrl = new URL(import.meta.url);
+const rssFileUrl = new URL(config.get("rss.fileName"), publicDirUrl);
 ---
 
 <Base title={title.toUpperCase()}>
-  <section aria-label='Post list'>
+  <section aria-label="Post list">
     {
       indexPosts.map((post) => {
         return (
@@ -27,6 +32,9 @@ const indexPosts = allPosts.slice(0, pageSize);
         );
       })
     }
-    {allPosts.length > pageSize ? <a href='/2'>Next</a> : null}
+    {allPosts.length > pageSize ? <a href="/2">Next</a> : null}
   </section>
+  <WriteFile fileUrl={rssFileUrl} slot="rss-writer">
+    <RssXml allPosts={allPosts} slot="rss-writer" />
+  </WriteFile>
 </Base>

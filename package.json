@@ -15,12 +15,12 @@
     "blog"
   ],
   "dependencies": {
-    "@astrojs/image": "^0.5.1",
+    "@astrojs/image": "^0.6.0",
     "@astrojs/mdx": "^0.11.1",
     "@astrojs/rss": "^1.0.0",
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/solid-js": "^1.1.0",
-    "astro": "^1.1.6",
+    "astro": "^1.1.7",
     "astro-embed": "^0.1.1",
     "astro-icon": "^0.7.3",
     "config": "^3.3.7",

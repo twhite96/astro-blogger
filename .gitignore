@@ -6,6 +6,7 @@
 
 # build output
 dist
+src/pages/rss.xml
 
 # dependencies
 node_modules/
