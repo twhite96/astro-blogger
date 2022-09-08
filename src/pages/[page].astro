@@ -3,7 +3,7 @@ import Base from "../layouts/Base.astro";
 import Post from "../components/Post.astro";
 import Pager from "../components/Pager.astro";
 
-export async function getStaticPaths({paginate}) {
+export async function getStaticPaths({ paginate }) {
   let posts = await Astro.glob("../content/posts/*.mdx");
 
   posts = posts.reverse(
@@ -12,26 +12,26 @@ export async function getStaticPaths({paginate}) {
       new Date(a.frontmatter.date).valueOf()
   );
 
-  return paginate(posts, {pageSize: 2});
+  return paginate(posts, { pageSize: 2 });
 }
-const {page} = Astro.props;
+const { page } = Astro.props;
 
 const posts = page.data.map((post) => {
   return {
     frontmatter: post.frontmatter,
-    content: post.compiledContent(),
+    content: post.Content,
   };
 });
 ---
 
-<Base title='test'>
-  <section aria-label='Post list'>
+<Base title="test">
+  <section aria-label="Post list">
     {
       posts &&
         posts.map((post) => {
           return (
             <Post content={post}>
-              <Fragment set:html={post.content} />
+              <post.content />
             </Post>
           );
         })
