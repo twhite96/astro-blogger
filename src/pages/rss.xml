@@ -7,8 +7,8 @@
 
     <item>
       <title>People Are Not Thumb Drives</title>
-      <link>http://localhost:3000/5</link>
-      <guid>http://localhost:3000/5</guid>
+      <link>http://localhost:3000/thumb-drives</link>
+      <guid>http://localhost:3000/thumb-drives</guid>
       <description><![CDATA[ You can't transfer your memories to a baby, and even if you could, the baby would not be you.]]></description>
       <pubDate>Thu, 18 Aug 2022 09:00:00 PDT</pubDate>
       <content:encoded><![CDATA[<p>You can&#39;t transfer your memories to a baby, and even if you could, the baby would not be you.[^1]</p>
@@ -22,35 +22,9 @@
 <p>[^1]: A footnote test</p>]]></content:encoded>
     </item>
     <item>
-      <title>These Birds Are Out Of Control</title>
-      <link>http://localhost:3000/4</link>
-      <guid>http://localhost:3000/4</guid>
-      <description><![CDATA[ Birds poop on John and steal sandwiches out of his hand while he's eating them.]]></description>
-      <pubDate>Fri, 12 Aug 2022 09:00:00 PDT</pubDate>
-      <content:encoded><![CDATA[<p>Birds poop on John and steal sandwiches out of his hand while he&#39;s eating them.</p>
-<blockquote>
-<p>While this is happening, I&#39;m eating my sandwich. We make our own little sandwiches and bring them to the beach. I&#39;m eating my sandwich, and a bird comes from behind me, in the air, and takes a bite of my sandwich that is in my hand, that I am in the process of eating. He didn&#39;t get the sandwich because I grabbed it as they went away, but he took a bite out of it. And of course now I have to throw out that whole sandwich because it&#39;s got bird bite on it, alright? I don&#39;t want the bird slobber. It&#39;s in my hand, right?</p>
-<p>That happened to I think one other person so the new move was while we&#39;re eating lunch, hold your food close to your chest and be aware that the nearest bird may be behind you. We&#39;re watching in front of us, we&#39;re watching all these birds, watching them or whatever, I thought I was covered.</p>
-<p>And there was an umbrella too, the thing flew like under the umbrella, over my shoulder, over the back of the seat, and you know, while still flying went aah-chomp! and tried to grab the sandwich out of my hand.</p>
-<p>These birds are out of control. I don&#39;t know what has gotten into them. They&#39;re not afraid anymore, and they&#39;re poopin&#39; on us, and they&#39;re stealing our food out of our hands while we eat it.</p>
-</blockquote>]]></content:encoded>
-    </item>
-    <item>
-      <title>Micro-level</title>
-      <link>http://localhost:3000/3</link>
-      <guid>http://localhost:3000/3</guid>
-      <description><![CDATA[ Nothing in John's house is level.]]></description>
-      <pubDate>Wed, 10 Aug 2022 00:00:23 PDT</pubDate>
-      <content:encoded><![CDATA[<p>Nothing in John&#39;s house is level.</p>
-<blockquote>
-<p>I do like this stand, it&#39;s served me well. It&#39;s got glass shelves, holds everything up pretty well. I did micro-level it because of course nothing in my house is level.</p>
-<p>It&#39;s mostly level. If you put a level on it and look at the little bubble, it&#39;s between the two lines. But is it in the middle between the two lines? Almost!</p>
-</blockquote>]]></content:encoded>
-    </item>
-    <item>
       <title>The Hole</title>
-      <link>http://localhost:3000/2</link>
-      <guid>http://localhost:3000/2</guid>
+      <link>http://localhost:3000/the-hole</link>
+      <guid>http://localhost:3000/the-hole</guid>
       <description><![CDATA[ A hole is not a tube.]]></description>
       <pubDate>Tue, 09 Aug 2022 00:23:38 PDT</pubDate>
       <content:encoded><![CDATA[<p>A hole is not a tube.</p>
@@ -61,14 +35,40 @@
     </item>
     <item>
       <title>No Blooming</title>
-      <link>http://localhost:3000/1</link>
-      <guid>http://localhost:3000/1</guid>
+      <link>http://localhost:3000/no-blooming</link>
+      <guid>http://localhost:3000/no-blooming</guid>
       <description><![CDATA[ John buys a new TV and his family is not impressed.]]></description>
       <pubDate>Sun, 07 Aug 2022 00:21:00 PDT</pubDate>
       <content:encoded><![CDATA[<p>John buys a new TV and his family is not impressed.</p>
 <blockquote>
 <p>So anyway, I give the whole experience a big thumbs up. I am much more excited and impressed by this television than anyone else in my family, I can tell you that. They don&#39;t care.</p>
 <p>I showed them the footage of the honey dripping onto the thing on a black background... how are you not impressed by that? There&#39;s no blooming, it&#39;s HDR, every pixel is individually lit up!</p>
+</blockquote>]]></content:encoded>
+    </item>
+    <item>
+      <title>Micro-level</title>
+      <link>http://localhost:3000/micro-level</link>
+      <guid>http://localhost:3000/micro-level</guid>
+      <description><![CDATA[ Nothing in John's house is level.]]></description>
+      <pubDate>Wed, 10 Aug 2022 00:00:23 PDT</pubDate>
+      <content:encoded><![CDATA[<p>Nothing in John&#39;s house is level.</p>
+<blockquote>
+<p>I do like this stand, it&#39;s served me well. It&#39;s got glass shelves, holds everything up pretty well. I did micro-level it because of course nothing in my house is level.</p>
+<p>It&#39;s mostly level. If you put a level on it and look at the little bubble, it&#39;s between the two lines. But is it in the middle between the two lines? Almost!</p>
+</blockquote>]]></content:encoded>
+    </item>
+    <item>
+      <title>These Birds Are Out Of Control</title>
+      <link>http://localhost:3000/birds</link>
+      <guid>http://localhost:3000/birds</guid>
+      <description><![CDATA[ Birds poop on John and steal sandwiches out of his hand while he's eating them.]]></description>
+      <pubDate>Fri, 12 Aug 2022 09:00:00 PDT</pubDate>
+      <content:encoded><![CDATA[<p>Birds poop on John and steal sandwiches out of his hand while he&#39;s eating them.</p>
+<blockquote>
+<p>While this is happening, I&#39;m eating my sandwich. We make our own little sandwiches and bring them to the beach. I&#39;m eating my sandwich, and a bird comes from behind me, in the air, and takes a bite of my sandwich that is in my hand, that I am in the process of eating. He didn&#39;t get the sandwich because I grabbed it as they went away, but he took a bite out of it. And of course now I have to throw out that whole sandwich because it&#39;s got bird bite on it, alright? I don&#39;t want the bird slobber. It&#39;s in my hand, right?</p>
+<p>That happened to I think one other person so the new move was while we&#39;re eating lunch, hold your food close to your chest and be aware that the nearest bird may be behind you. We&#39;re watching in front of us, we&#39;re watching all these birds, watching them or whatever, I thought I was covered.</p>
+<p>And there was an umbrella too, the thing flew like under the umbrella, over my shoulder, over the back of the seat, and you know, while still flying went aah-chomp! and tried to grab the sandwich out of my hand.</p>
+<p>These birds are out of control. I don&#39;t know what has gotten into them. They&#39;re not afraid anymore, and they&#39;re poopin&#39; on us, and they&#39;re stealing our food out of our hands while we eat it.</p>
 </blockquote>]]></content:encoded>
     </item>
   </channel>
