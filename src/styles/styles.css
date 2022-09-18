@@ -95,7 +95,7 @@ p.episode-description {
   cursor: pointer;
 }
 .footnote-button {
-  background: var(--text1);
+  background: lightcoral;
   border: 0;
   border-radius: 0.475em;
   cursor: pointer;
@@ -130,23 +130,23 @@ p.episode-description {
   transition: color 0.25s ease;
 }
 .footnote-button:hover {
-  background: var(--brand);
+  background: rgb(156, 128, 216);
   outline: 0;
 }
 .footnote-button:hover:after {
-  color: var(--text1);
+  color: white;
 }
 .footnote-button.is-active {
-  background: var(--text1);
+  background: rgb(156, 128, 216);
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 .footnote-button.is-active:after {
-  color: var(--surface1);
+  color: white;
 }
 .bf-footnote {
-  background: var(--text1);
-  color: var(--surface1);
+  background: rgb(156, 128, 216);
+  color: white;
   border: 1px solid var(--accent1);
   border-radius: 0.25em;
   left: 0;
@@ -184,7 +184,7 @@ p.episode-description {
 }
 .footnote-tooltip {
   background: inherit;
-  border: 1px solid #d8d8d8;
+  border: 1px solid #black;
   height: 1.3em;
   position: absolute;
   top: -0.49em;
