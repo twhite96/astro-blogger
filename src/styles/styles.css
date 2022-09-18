@@ -86,6 +86,10 @@ p.episode-description {
   text-align: center;
 }
 
+article {
+  margin-bottom: 5rem;
+}
+
 .footnote-container {
   display: inline-block;
   position: relative;
